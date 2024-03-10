@@ -11,10 +11,7 @@ class Character:
         self.defense = defence
 
     def show_info(self):
-        print(f' = {self.name} =\n'
-              f' Health: {self.health}\n'
-              f' Damage: {self.damage}\n'
-              f' Defence: {self.defense}\n')
+        print(self.__str__())
 
     def __str__(self):
         return f' = {self.name} =\n' \
@@ -27,4 +24,8 @@ class Character:
 
     def attack(self, target):
         return target.take_damage(self.damage)
-    def is.alife
+    def is_alive(self):
+        if self.health > 0:
+            return True
+        else:
+            return False
