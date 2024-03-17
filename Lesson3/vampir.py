@@ -23,7 +23,7 @@ class Vampire:
         return damage
 
     def attack(self, target):
-        health = self.health + (self.damage / 10)
+        self.health += 6
         return target.take_damage(self.damage)
     def is_alive(self):
         if self.health > 0:
