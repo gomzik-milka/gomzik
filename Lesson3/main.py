@@ -1,11 +1,11 @@
 from lesson2.character import Character
-from berserk import berserk
+from vampir import Vampire
 
 
 player1 = Character('Vasya')
 player1.show_info()
 
-player2 = berserk('Petya', damage=50)
+player2 = Vampire('Petya', damage=50)
 print(player2)
 
 while player1.is_alive() and player2.is_alive():
