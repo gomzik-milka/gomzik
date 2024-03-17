@@ -4,7 +4,7 @@ from lesson2.character import Character
 class berserk(Character):
     def __int__(self, name, health=100, damage=1, defence=0):
         super().__init__(name, health, damage, defence)
-        def .max_health = health
+        self.max_health = health
 
         def attack(self, target):
             additional_damage = (1 - self.health / self.max_health) * self.damage
